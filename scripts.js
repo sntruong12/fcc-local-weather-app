@@ -8,7 +8,7 @@ var xhr = new XMLHttpRequest(),
 var parsedInfo;
 
 var userWeather,
-    userTemperature = 50,
+    userTemperature = 6,
     userImage;
 
 var buttonClasses = document.getElementById("disable").className;
