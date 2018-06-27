@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="./styles.css"  media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <!--title of app-->
+      <div class="row">
+        <div class="col s12">
+          <h3 class="left-align">current weather</h3>
+        </div>
+      </div>
+
+      <!--display icon-->
+      <div class="row">
+        <div class="col s12">
+          <img src="https://images.vexels.com/media/users/3/145138/isolated/preview/1de68bf333344dc5a6efca43807cfc6d-sun-small-line-beams-icon-by-vexels.png" id="icon">
+        </div>
+      </div>
+
+      <!--display temperature-->
+      <div class="row">
+        <div class="col s12">
+          <p class="center-align" id="temperature" onclick="convertTemperature()">50°f</p>
+        </div>
+      </div>
+
+      <!--display weather-->
+      <div class="row">
+        <div class="col s12">
+          <p class="center-align" id="weather">sunny</p>
+        </div>
+      </div>
+
+      <!--button to initiate app-->
+      <div class="row">
+        <div class="col s12 center-align">
+          <a class="waves-effect waves-light btn-small" onclick="getCoordinates()" id="disable">
+            click!
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- custom scripts file -->
+    <script type="text/javascript" src="./scripts.js"></script>
+  </body>
+</html>
